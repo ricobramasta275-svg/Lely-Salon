@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lely Salon – Luxury Beauty Salon</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --soft-gray: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--white);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--gold);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      position: relative;
+    }
+
+    .section-title h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--soft-gray);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+    }
+
+    /* BEFORE AFTER */
+    .before-after {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .before-after h2 {
+      color: var(--gold);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 60px 8% 40px;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <h1>Lely Salon</h1>
+    <p>Luxury beauty treatments crafted to enhance your natural elegance</p>
+  </div>
+</header>
+
+<!-- SERVICES -->
+<section>
+  <div class="section-title">
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="services">
+
+    <!-- MAKE UP -->
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2" alt="Professional Makeup">
+      <div class="content">
+        <h3>Make Up</h3>
+      </div>
+    </div>
+
+    <!-- FACIAL -->
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881" alt="Facial Treatment">
+      <div class="content">
+        <h3>Facial Treatment</h3>
+      </div>
+    </div>
+
+    <!-- HAIR TREATMENT -->
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15" alt="Hair Treatment">
+      <div class="content">
+        <h3>Hair Treatment</h3>
+      </div>
+    </div>
+
+    <!-- BODY MASSAGE -->
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" alt="Body Massage">
+      <div class="content">
+        <h3>Body Massage</h3>
+      </div>
+    </div>
+
+    <!-- SMOOTHING -->
+    <div class="service-card">
+      <img src="https://cdn.phototourl.com/uploads/2026-01-17-ca8d6615-fe18-483b-a119-2d202a41147b.jpg" alt="Hair Smoothing">
+      <div class="content">
+        <h3>Smoothing</h3>
+      </div>
+    </div>
+
+    <!-- HAIR COLOR -->
+    <div class="service-card">
+      <img src="https://cdn.phototourl.com/uploads/2026-01-17-c1c3bcc9-b33c-4739-941e-406ab217c9f6.jpg" alt="Hair Coloring">
+      <div class="content">
+        <h3>Hair Coloring</h3>
+      </div>
+    </div>
+
+    <!-- CREAMBATH -->
+    <div class="service-card">
+      <img src="https://cdn.phototourl.com/uploads/2026-01-17-0d17f44c-4769-48d2-a057-200eb2b33840.jpg" alt="Creambath Treatment">
+      <div class="content">
+        <h3>Creambath</h3>
+      </div>
+    </div>
+
+    <!-- MILK BATH -->
+    <div class="service-card">
+      <img src="https://cdn.phototourl.com/uploads/2026-01-17-a4b867ce-a579-4839-b91e-f16148fa4992.jpg" alt="Milk Bath Spa">
+      <div class="content">
+        <h3>Milk Bath</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="before-after">
+  <div class="section-title">
+    <h2>Before & After</h2>
+  </div>
+
+  <div class="gallery">
+    <img src="https://cdn.phototourl.com/uploads/2026-01-17-f1bdf8c6-96f8-473d-8b12-1dcc5b7c0ad8.jpg" alt="Before After Hair 1">
+    <img src="https://cdn.phototourl.com/uploads/2026-01-17-feae4392-c82e-460e-a1f5-3de782b11a49.jpg" alt="Before After Hair 2">
+    <img src="https://cdn.phototourl.com/uploads/2026-01-17-b93ea070-2812-4d3e-88ad-a24462e03ee5.jpg" alt="Before After Hair 3">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h3>Lely Salon</h3>
+  <p><strong>Address:</strong> Jl. Mayjen Sungkono, Malang</p>
+  <p><strong>Contact:</strong> +62 821-4204-9525</p>
+
+  <div class="footer-bottom">
+    © 2026 Lely Salon. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
